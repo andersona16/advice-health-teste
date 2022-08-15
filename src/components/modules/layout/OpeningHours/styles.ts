@@ -1,11 +1,16 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
 
 export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background: #f2f2f2;
   box-shadow: 0 0 4px rgb(0 0 0 / 50%);
   padding: 10px;
@@ -20,6 +25,9 @@ export const Content = styled.div`
 
     gap: 20px;
 
+    width: 520px;
+    max-width: 100%;
+
     > div:nth-child(1) {
       span {
         font-size: 2rem;
@@ -27,7 +35,15 @@ export const Content = styled.div`
       }
     }
     div:nth-child(3) {
-      background-color: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      > button {
+        border: none;
+        background-color: transparent;
+      }
     }
   }
 `;

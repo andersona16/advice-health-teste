@@ -46,12 +46,10 @@ const Input: FC<IInputProps> = ({
       ref: inputRef.current,
       path: 'value',
       clearValue: (ref: any) => {
-        // eslint-disable-next-line no-param-reassign
         ref.value = '';
         setIsFilled(false);
       },
       setValue: (ref: any, value: string) => {
-        // eslint-disable-next-line no-param-reassign
         ref.value = value;
         setIsFilled(true);
       },

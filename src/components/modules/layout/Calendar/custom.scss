@@ -1,0 +1,26 @@
+.react-datepicker__day {
+  font-size: 10px;
+  background-color: #cacaca;
+  font-size: 10px;
+
+  width: 2.7rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+.react-datepicker__month-container {
+  background-color: #9c9a9a;
+  height: auto;
+  width: auto;
+}
+
+.react-datepicker__month {
+  height: auto;
+}
+
+.react-datepicker__day-names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+}

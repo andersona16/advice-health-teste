@@ -12,7 +12,7 @@ interface IAsideContext {
 
 export const AsideContext = createContext<IAsideContext>({} as IAsideContext);
 
-const AsideProvider: FC = ({ children }) => {
+const AsideProvider: FC<IAsideContext> = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
   const animation = useSpring({ left: isVisible ? '0' : '-280px' });
 

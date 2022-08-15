@@ -1,18 +1,16 @@
-import { Form } from "@unform/web";
-import { useCallback } from "react";
-import { FiSearch, FiFilter, FiEdit } from "react-icons/fi";
-import { Input } from "../../components/modules/elements/Form/Input";
-import { Table } from "../../components/modules/elements/Table";
-import { TableColumn } from "../../components/modules/elements/Table/TableColumn";
-import { TableRow } from "../../components/modules/elements/Table/TableRow";
-import { ButtonOptions, Container, OptionsButtons } from "./styles";
+import { Form } from '@unform/web';
+import { useCallback } from 'react';
+import { FiSearch, FiFilter, FiEdit } from 'react-icons/fi';
+import { Input } from '../../components/modules/elements/Form/Input';
+import { Table } from '../../components/modules/elements/Table';
+import { TableColumn } from '../../components/modules/elements/Table/TableColumn';
+import { TableRow } from '../../components/modules/elements/Table/TableRow';
+import { ButtonOptions, Container, OptionsButtons } from './styles';
 
 function ConsultAppointments() {
-
   const handleSearch = useCallback(() => {
     // CODE
   }, []);
-
 
   return (
     <>
@@ -27,19 +25,15 @@ function ConsultAppointments() {
             />
           </Form>
 
-
           <div>
             <button>
               <FiFilter size={30} />
               <h1> Filtros avançados</h1>
             </button>
           </div>
-
         </div>
 
-
         <div>
-
           <Table width="auto" height="auto">
             <TableRow>
               <TableColumn>
@@ -63,27 +57,31 @@ function ConsultAppointments() {
               <TableColumn>
                 <span>Opções</span>
               </TableColumn>
-
             </TableRow>
 
             <TableRow>
               <TableColumn>
-                <input type="checkbox" name="" id="" />
+                <select name="" id="">
+                  <option value=""></option>
+                  <option value="">Compareceu</option>
+                  <option value="">Ausente</option>
+                  <option value="">Atrasado</option>
+                </select>
               </TableColumn>
               <TableColumn>
-                <span>Teste</span>
+                <span>John</span>
               </TableColumn>
               <TableColumn>
-                <span>Teste</span>
+                <span>08/07/20222</span>
               </TableColumn>
               <TableColumn>
-                <span>Teste</span>
+                <span>João Gomes</span>
               </TableColumn>
               <TableColumn>
-                <span>Teste</span>
+                <span>R$ 150</span>
               </TableColumn>
               <TableColumn>
-                <span>Teste</span>
+                <span>Débito</span>
               </TableColumn>
 
               <TableColumn>
@@ -93,14 +91,10 @@ function ConsultAppointments() {
                 </OptionsButtons>
               </TableColumn>
             </TableRow>
-
           </Table>
         </div>
-
-
       </Container>
     </>
-
   );
 }
 

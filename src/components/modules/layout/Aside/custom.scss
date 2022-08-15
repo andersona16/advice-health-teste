@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 190px;
+  width: 60px;
   height: 100vh;
   overflow: auto;
   // position: fixed;
@@ -12,9 +12,6 @@
   z-index: 17;
   background: #dfdfdf;
   box-shadow: 0 2px rgb(0 0 0 / 50%);
-  &:hover {
-    width: 190px;
-  }
 
   a {
     display: flex;
@@ -22,6 +19,10 @@
     justify-content: center;
     gap: 10px;
     font-size: 1rem;
+  }
+
+  span {
+    display: none;
   }
 
   div:nth-child(2) {

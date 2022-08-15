@@ -1,22 +1,34 @@
-import { FC } from "react"
-import { CardUser, ImageWrapper } from "./styles"
+import { FC } from 'react';
+import { CardUser, Container, Content } from './styles';
 
 const AddCustomer: FC = () => {
-    return (
-        <>
+  const doctors = [
+    {
+      id: '1',
+      name: 'John',
+      role: 'Médico',
+      src: 'https://i.pravatar.cc/60',
+    },
+  ];
 
-            <CardUser>
-                <ImageWrapper>
-                    <img alt="" />
-                    <div>
-                        <h1>Nome médico</h1>
-                        <span>Função</span>
-                    </div>
-
-                </ImageWrapper>
-            </CardUser>
-
-        </>
-    )
-}
-export { AddCustomer }
+  return (
+    <>
+      <Container>
+        <Content>
+          <CardUser>
+            {doctors.map(doctor => (
+              <div key="id">
+                <img src={doctor.src} />
+                <div>
+                  <h1>{doctor.name}</h1>
+                  <span>{doctor.role}</span>
+                </div>
+              </div>
+            ))}
+          </CardUser>
+        </Content>
+      </Container>
+    </>
+  );
+};
+export { AddCustomer };

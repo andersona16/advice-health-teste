@@ -4,11 +4,14 @@ import { TableButton } from '../../components/modules/elements/Table/TableButton
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-
-  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
 
   padding: 30px 40px;
   gap: 60px;
+
+  width: 100%;
+  height: 100%;
 
   > div:nth-child(1) {
     display: flex;

@@ -1,22 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { FC } from 'react';
-import {
-  FiUser,
-  FiLogOut,
-  FiSettings,
-} from 'react-icons/fi';
+import { FiUser, FiLogOut, FiSettings } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
-import {
-  Container,
-  Menu,
-  MenuLeft,
-  MenuRight,
-  CustomButton,
-} from './styles';
+import { Container, Menu, MenuLeft, MenuRight, CustomButton } from './styles';
 import { Dropdown } from '../../elements/Dropdown';
-import imgLogo from '../../../../assets/img/logo_advice_150.png'
-
+import imgLogo from '../../../../assets/img/logo_advice_150.png';
 
 const Header: FC = () => {
   return (
@@ -26,7 +15,6 @@ const Header: FC = () => {
           <Link to="/workspace">
             <img src={imgLogo} alt="AdviceHealth | Logo" />
           </Link>
-
         </MenuLeft>
 
         <MenuRight>
@@ -40,16 +28,20 @@ const Header: FC = () => {
             icon={FiUser}
           >
             <li>
-              <CustomButton type="button" >
-                <FiSettings size={20} />
-                Ver perfil
-              </CustomButton>
+              <Link to="page-in-development">
+                <CustomButton type="button">
+                  <FiSettings size={20} />
+                  Ver perfil
+                </CustomButton>
+              </Link>
             </li>
             <li>
-              <CustomButton type="button">
-                <FiLogOut size={20} />
-                Sair
-              </CustomButton>
+              <Link to="/page-in-development">
+                <CustomButton type="button">
+                  <FiLogOut size={20} />
+                  Sair
+                </CustomButton>
+              </Link>
             </li>
           </Dropdown>
         </MenuRight>

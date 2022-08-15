@@ -4,7 +4,6 @@ import { useContextSelector } from 'use-context-selector';
 import { AsideContext } from '../contexts/aside';
 
 interface IAsideContext {
-  // eslint-disable-next-line @typescript-eslint/ban-types
   animation: AnimatedValue<Pick<object, never>>;
   isVisible: boolean;
   handleAsideVisibility(): void;

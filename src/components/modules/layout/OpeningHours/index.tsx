@@ -1,38 +1,48 @@
-import { FC } from "react"
-import { Container, Content } from "./styles"
-import { FiEdit, FiTrash2, FiPlus } from "react-icons/fi";
-import { AddCustomer } from "../AddCustomer";
-
+import { FC } from 'react';
+import { Container, Content } from './styles';
+import {
+  FiEdit,
+  FiTrash2,
+  FiPlus,
+  FiPlusCircle,
+  FiMinusCircle,
+} from 'react-icons/fi';
+import { AddCustomer } from '../AddCustomer';
 
 const OpeningHours: FC = () => {
-    const data = new Date()
+  return (
+    <>
+      <Container>
+        <Content>
+          <div>
+            <div>
+              <span>08:00</span>
+            </div>
 
-    return (
-        <>
-            <Container>
-                <h1>New Date</h1>
-                <Content>
-                    <div>
-                        <div>
-                            <span>08:12</span>
-                        </div>
+            <AddCustomer />
 
-                        <div>
-                            <AddCustomer />
-                        </div>
+            <div>
+              <button>
+                <span>
+                  <FiPlus />
+                </span>
+              </button>
+              <button>
+                <span>
+                  <FiTrash2 />
+                </span>
+              </button>
+              <button>
+                <span>
+                  <FiEdit />
+                </span>
+              </button>
+            </div>
+          </div>
+        </Content>
+      </Container>
+    </>
+  );
+};
 
-                        <div>
-                            <span><FiPlus /></span>
-                            <span><FiTrash2 /></span>
-                            <span><FiEdit /></span>
-                        </div>
-
-                    </div>
-                </Content>
-            </Container>
-        </>
-
-    )
-}
-
-export { OpeningHours }
+export { OpeningHours };

@@ -4,24 +4,17 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
-  background: #f2f2f2;
+  width: 100%;
   height: auto;
-  width: auto;
-  height: 223px;
-  overflow: overlay;
 `;
 
-export const CardUser = styled.div`
-  background-color: 1px solid #fff;
-  width: 313px;
-  height: 50px;
-  border-radius: 10px;
+export const Content = styled.div`
+  display: flex;
+  justify-content: center;
+  height: 430px;
+  overflow: overlay;
 
-  & + * {
-    margin-top: 10px;
-  }
   h1 {
     font-size: 14px;
     color: gray;
@@ -32,17 +25,31 @@ export const CardUser = styled.div`
   }
 `;
 
-export const ImageWrapper = styled.div`
+export const CardUser = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: auto;
+`;
+
+export const InfoCard = styled.div`
   display: flex;
   align-items: center;
-  gap: 30px;
-  margin: 0px 12px 0px 6px;
+  gap: 10px;
+
+  padding: 10px 15px;
 
   background-color: #d9d9d9;
 
   img {
-    border-radius: 10px;
-    width: 36px;
-    height: 36px;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  & + * {
+    margin-top: 10px;
   }
 `;

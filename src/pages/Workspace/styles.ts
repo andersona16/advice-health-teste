@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 
   padding: 30px 40px;
   gap: 60px;
@@ -15,35 +16,16 @@ export const Container = styled.div`
 `;
 
 export const Dashboard = styled.div`
-  h1 {
+  > h1 {
     color: gray;
     font-size: 2rem;
+    padding: 0 20px;
   }
 
   > div:nth-child(2) {
     display: flex;
     justify-content: space-between;
     gap: 15px;
-
-    > div:nth-child(1) {
-      background: red;
-      width: 300px;
-    }
-    > div:nth-child(2) {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      > div:nth-child(1) {
-        background: red;
-        width: 300px;
-        height: 120px;
-      }
-      > div:nth-child(2) {
-        background: red;
-        width: 300px;
-        height: 120px;
-      }
-    }
   }
 `;
 
@@ -51,6 +33,11 @@ export const ReminderNotices = styled.div`
   h1 {
     color: gray;
     font-size: 2rem;
+    padding: 0 20px;
+  }
+
+  span {
+    font-size: 0.8rem;
   }
 `;
 
