@@ -3,7 +3,7 @@ import { Form } from '@unform/web';
 import { useCallback } from "react";
 import { FiSearch } from "react-icons/fi";
 import { Container, Dashboard, ContentsOfDivisionTwo, ReminderNotices, ContentsOfDivisionOne } from "./styles";
-import { TableContainer } from "../../components/modules/elements/Table";
+
 
 function WorkSpace() {
   const handleSearch = useCallback(() => {
@@ -43,7 +43,6 @@ function WorkSpace() {
             <h1>Avisos/Lembrete</h1>
             <span>avisos/lembretes;</span>
 
-            <TableContainer />
           </ReminderNotices>
         </ContentsOfDivisionOne>
 

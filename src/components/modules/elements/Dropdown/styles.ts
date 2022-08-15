@@ -175,7 +175,7 @@ export const Content = styled.div<IDropdownProps>`
       height: 100%;
       width: 100%;
 
-      border: 1px solid #48BDC7;
+      border: 1px solid gray;
 
       font-size: inherit;
       font-weight: 700;

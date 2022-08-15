@@ -23,7 +23,7 @@ const Header: FC = () => {
     <Container>
       <Menu>
         <MenuLeft>
-          <Link to="/dashboard">
+          <Link to="/workspace">
             <img src={imgLogo} alt="AdviceHealth | Logo" />
           </Link>
 
